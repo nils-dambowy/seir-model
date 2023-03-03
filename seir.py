@@ -55,6 +55,11 @@ def main(x):
     ax.yaxis.set_tick_params(length=0)
     ax.xaxis.set_tick_params(length=0)
 
+    legend=ax.legend()
+    legend.get_frame().set_alpha(0.5)
+    for spine in ('top', 'right', 'bottom', 'left'):
+        ax.spines[spine].set_visible(False)
+
 
     
     
